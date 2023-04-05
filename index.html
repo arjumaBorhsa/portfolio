@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Borsha</a>
+        <div class="menuToggle"></div>
+        <ul class="nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#experience">Education & Experience</a></li>
+            <li><a href="#service">Skills</a></li>
+            <li><a href="#portfolio">Photos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <div class="content">
+            <h2>Suriya Arjuma</h2>
+            <p>Assalamualikum , Currently I Am Studying In Department Of Disaster Management & Resilience At Bangladesh
+                University Of Professionals Under The Faculty Of Arts And Social-Sciences.</p>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <img src="images/borsha (2).png" alt="" srcset="" class="men">
+    </section>
+    <section id="experience">
+        <main class="row">
+            <section class="col">
+                <div class="education">
+                    <h2>Education</h2>
+                    <div class="content">
+                        <div class="box">
+                            <h4>2010-2018</h4>
+                            <h3>Primary and High School</h3>
+                            <p>Chuadanga Govt. Girls High School, Chuadanga</p>
+                        </div>
+                        <div class="box">
+                            <h4>2018-2020</h4>
+                            <h3>College - Higher Secondary School Certificate</h3>
+                            <p>Chuadanga Govt. College, Chuadanga</p>
+                        </div>
+                        <div class="box">
+                            <h4>2021-Running</h4>
+                            <h3>Bachelor in Science-Department Of Disaster Management & Resilience</h3>
+                            <p>Bangladesh University Of Professionals</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col">
+                <div class="experience">
+                    <h2>Experience</h2>
+                    <div class="content">
+                        <div class="box">
+                            <h4>2020- </h4>
+                            <h3>Assistant Office Secretary</h3>
+                            <p>BUP Research society</p>
+                        </div>
+                        <div class="box">
+                            <h4>2020-</h4>
+                            <h3>Assistant Director of Event Management</h3>
+                            <p>BUP Disaster management forum</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+
+    </section>
+    <section id="service">
+        <div class="secText">
+            <h2>What I Am Great At</h2>
+            <p>With years of experience in both writing and design, I have honed my skills to a level of proficiency
+                that allows me to consistently deliver outstanding results. From concept to completion, I approach every
+                project with creativity, attention to detail, and a passion for excellence.</p>
+        </div>
+        <div class="content">
+            <div class="serviceBx">
+                <img src="images/icon1.png" alt="">
+                <h3>Design</h3>
+            </div>
+            <div class="serviceBx">
+                <img src="images/icon2.png" alt="">
+                <h3>Article Writing</h3>
+            </div>
+            <div class="serviceBx">
+                <ion-icon name="bug-outline"></ion-icon>
+                <h3>Problem Solving</h3>
+            </div>
+            <div class="serviceBx">
+                <img src="images/icon4.png" alt="">
+                <h3>Video Editing</h3>
+            </div>
+        </div>
+        <div class="center">
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="secText">
+            <h2>Who Am I?</h2>
+            <p>I was born on the 2nd August, 2002.In the district of chuadanga, Bangladesh. Currently I am living in
+                Dhaka, Bangladesh.<br>I am a hard-working and driven individual who isn't afraid to face a challenge.i
+                am someone who will stand up for something I believe in</p>
+        </div>
+        <div class="content">
+            <div class="imgBx">
+                <img src="images/b1.jpg" alt="" srcset="">
+            </div>
+            <div class="imgBx">
+                <img src="images/b2.jpg" alt="" srcset="">
+            </div>
+            <div class="imgBx">
+                <img src="images/b3.jpg" alt="" srcset="">
+            </div>
+        </div>
+        <div class="center">
+            <a href="#" class="btn">View More</a>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="secText">
+            <h2>Way To Contact Me</h2>
+            <p>Currently I am available any of those platform. Feel free to ask for any quires. </p>
+        </div>
+        <div class="content">
+            <a href="#"><ion-icon name="mail-unread-outline"></ion-icon>suriyaarjuma0@gmail.com</a>
+            <a href="#"><ion-icon name="call-outline"></ion-icon>+880 1951 121940</a>
+            <a href="#"><ion-icon name="logo-skype"></ion-icon>Skype</a>
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon>WhatsApp: +880 1951 121940</a>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let list = document.querySelectorAll('.nav li');
+        function active() {
+            list.forEach((i) => i.classList.remove('active'));
+            this.classList.add('active')
+        }
+
+        list.forEach((i) => i.addEventListener('click', active));
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function () {
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
